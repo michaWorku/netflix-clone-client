@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import './Home.scss'
-import { Navbar, Footer, Featured } from '../../components'
-import List from '../../components/List/List'
+import { Navbar, Footer, Featured, MovieList } from '../../components'
+
 import { movieType } from "../../type";
 
 
@@ -10,15 +10,10 @@ const Home : FC<movieType> = ({movieType}) => {
     <div className='home'>
       <Navbar/>
       <Featured movieType={movieType}/>
-      <List/>
-      <List/><List/><List/><List/><List/><List/><List/><List/>
-      <List/>
-      <List/>
-      <List/><List/><List/><List/><List/><List/><List/><List/>
-      <List/>
-      <List/>
-      <List/><List/><List/><List/><List/><List/><List/><List/>
-      <List/>
+      <MovieList/>
+      <MovieList/>
+      <MovieList/>
+      <MovieList/>
       <Footer />
     </div>
   )
