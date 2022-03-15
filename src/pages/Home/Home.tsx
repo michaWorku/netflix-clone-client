@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import './Home.scss'
-import { Navbar } from '../../components'
+import { Navbar, Footer } from '../../components'
 import List from '../../components/List/List'
 
 
@@ -17,6 +17,7 @@ const Home : FC = () => {
       <List/>
       <List/><List/><List/><List/><List/><List/><List/><List/>
       <List/>
+      <Footer />
     </div>
   )
 }
